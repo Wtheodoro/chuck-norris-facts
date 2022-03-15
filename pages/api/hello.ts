@@ -11,3 +11,12 @@ export default function handler(
 ) {
   res.status(200).json({ name: 'John Doe' })
 }
+
+const BASE_URL = 'https://api.chucknorris.io/jokes'
+
+export const getFact = async () => {
+  const fact = await fetch(`${BASE_URL}/random`)
+    .then((response) => response.json())
+
+  return fact
+}
