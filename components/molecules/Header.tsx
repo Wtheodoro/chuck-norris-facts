@@ -22,8 +22,8 @@ return (
   }>
     <div className={
       !!scrollTop
-      ? "flex flex-col md:flex-row items-center py-2 text-gray-500"
-      : "flex flex-col md:flex-row items-center py-0 text-white"
+      ? "flex flex-col md:flex-row md:space-x-2 items-center py-2 text-gray-500"
+      : "flex flex-col md:flex-row md:space-x-2 items-center py-0 text-white"
     }>
       <p>Chuck Norris</p>
       <p>Facts</p>

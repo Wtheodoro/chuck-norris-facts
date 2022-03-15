@@ -7,6 +7,7 @@ import { Fact } from '../types/facts'
 import FactsListSection from '../components/organisms/FactsListSection'
 import CategoriesSection from '../components/organisms/CategoriesSection'
 import SearchAFactSection from '../components/organisms/SearchAFactSection'
+import Footer from '../components/molecules/Footer'
 
 export interface HomeProps {
   exploreFact: Fact
@@ -43,34 +44,34 @@ const Home = ({ exploreFact, factsCategories }: HomeProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='sticky top-0 left-0 right-0 z-10'>
-        <Header />
-      </header>
+      <body className='font-mono'>
+        <header className='sticky top-0 left-0 right-0 z-10'>
+          <Header />
+        </header>
 
-      <main>
-        <div className='bg-black h-[410px] sm:h-[510px] lg:h-[610px] xl-h[710px] 2xl:h-[810px]'>
-          <Banner
-            fact={factOnBanner?.value || exploreFact?.value}
-            buttonClick={getANewFact}
-          />
-        </div>
+        <main>
+          <div className='bg-black h-[410px] sm:h-[510px] lg:h-[610px] xl-h[710px] 2xl:h-[810px]'>
+            <Banner
+              fact={factOnBanner?.value || exploreFact?.value}
+              buttonClick={getANewFact}
+            />
+          </div>
 
-        <div className='max-w-7xl mx-auto px-8 sm:px-16 min-h-screen'>
-          <CategoriesSection
-            categories={factsCategories}
-            eachButtonClick={getANewFactByCategory}
-          />
+          <div className='max-w-7xl mx-auto px-8 sm:px-16 min-h-screen'>
+            <CategoriesSection
+              categories={factsCategories}
+              eachButtonClick={getANewFactByCategory}
+            />
+            
+            <FactsListSection
+              facts={recordedFacts}
+            />
+          </div>
           
-          <FactsListSection
-            facts={recordedFacts}
-          />
-        </div>
-        
-      </main>
+        </main>
 
-      <footer>
-        
-      </footer>
+        <Footer />
+      </body>
     </div>
   )
 }
