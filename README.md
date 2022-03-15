@@ -35,3 +35,8 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
     npm run dev
+
+### `Run tests`
+This project has some tests with Cypress, so the command **npm run test** run Cypress environment to watch all thoses tests. You can take a look on scripts inside package.json
+
+    npm run test
