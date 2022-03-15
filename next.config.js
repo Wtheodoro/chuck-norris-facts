@@ -5,6 +5,7 @@ const nextConfig = {
     domains: [
       'links.papareact.com',
       'cdn.pixabay.com',
+      'assets.chucknorris.host'
     ],
   },
 }
