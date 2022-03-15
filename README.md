@@ -24,13 +24,13 @@ You can clone by using git clone on your terminal:
 
 You can clone by click on the GitHub green button "CODE" and download the .zip
 
-### `npm install`
+### `Install the dependencies`
 This project depends on some dependencies, so the command **npm install** takes care of installing all of them
 
     npm install
 
 
-### `npm run dev`
+### `Run the project`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
