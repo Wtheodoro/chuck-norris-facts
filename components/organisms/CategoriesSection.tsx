@@ -11,7 +11,7 @@ const CategoriesSection = ({ categories, eachButtonClick }: CategoriesSectionPro
   return (
     <section className="pt-6">
       <Title>Categories</Title>
-      <div className="space-10 grid grid-cols-2 md:grid-cols-4 md:gap-x-10">
+      <div className="space-10 grid grid-cols-2 md:grid-cols-4 md:gap-x-10 cy_categories">
         {
           categories?.map((category: string) => (
             <Button

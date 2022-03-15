@@ -9,7 +9,7 @@ interface BannerProps {
 
 const Banner = ({ fact, buttonClick }: BannerProps) => {
   return (
-    <div className="relative mx-auto w-11/12 h-[300px] sm:h-[400px] lg:h-[500px] xl-h[600px] 2xl:h-[700px]">
+    <div className="relative mx-auto w-11/12 h-[300px] sm:h-[400px] lg:h-[500px] xl-h[600px] 2xl:h-[700px] cy_banner">
       <Image
         src={pic}
         layout="fill"

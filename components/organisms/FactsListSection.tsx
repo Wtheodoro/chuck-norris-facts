@@ -12,7 +12,7 @@ const FactsListSection = ({ facts }: FactsListSectionProps) => {
   return (
     <section className="pt-6">
         <Title>List of Facts</Title>
-        <div>
+        <div className="cy_recordedFacts">
           {
             facts?.map(({ value, icon_url, updated_at, id}: Fact) => (
               <SmallCard key={id} fact={value} img_url={icon_url} updated_at={updated_at}/>
