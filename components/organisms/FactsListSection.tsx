@@ -8,7 +8,6 @@ interface FactsListSectionProps {
 
 const FactsListSection = ({ facts }: FactsListSectionProps) => {
 
-  console.log(facts)
   return (
     <section className="pt-6">
         <Title>List of Facts</Title>
