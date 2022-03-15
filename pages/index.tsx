@@ -60,10 +60,6 @@ const Home = ({ exploreFact, factsCategories }: HomeProps) => {
             categories={factsCategories}
             eachButtonClick={getANewFactByCategory}
           />
-
-          <SearchAFactSection
-            inputPressEnter={getANewFactByQuery}
-          />
           
           <FactsListSection
             facts={recordedFacts}
