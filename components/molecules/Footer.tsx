@@ -20,8 +20,8 @@ const Footer = () => (
       </div>
 
       <div className="space-y-4 text-xs text-gray-800">
-        <h5 className="font-bold">END</h5>
-        <p>Made if 🖤</p>
+        <h5 className="font-bold">AND</h5>
+        <p className="cursor-pointer mt-4 animate-bounce font-bold">Made with 🖤</p>
       </div>
   </footer>
 )
