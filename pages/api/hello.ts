@@ -20,3 +20,17 @@ export const getFact = async () => {
 
   return fact
 }
+
+export const getFactByCategory = async (category: string) => {
+  const fact = await fetch(`${BASE_URL}/random?category=${category}`)
+    .then((response) => response.json())
+
+  return fact
+}
+
+export const getFactByQuery = async (query: string) => {
+  const fact = await fetch(`${BASE_URL}/random?query=${query}`)
+    .then((response) => response.json())
+
+  return fact
+}
